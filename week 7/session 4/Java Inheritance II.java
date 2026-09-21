@@ -1,0 +1,26 @@
+```java
+import java.util.*;
+
+class Arithmetic {
+
+    public int add(int a, int b) {
+        return a + b;
+    }
+}
+
+class Adder extends Arithmetic {
+
+}
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        Adder a = new Adder();
+
+        System.out.println("My superclass is: " + a.getClass().getSuperclass().getName());
+
+        System.out.println(a.add(42, 13));
+    }
+}
+```
